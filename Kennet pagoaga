@@ -1,0 +1,50 @@
+# Definir las dimensiones de la celda diaria
+altura = 2.5  # metros
+ancho = 10    # metros
+talud = 1/3   # relación 1:3
+
+# Calcular las dimensiones de la celda diaria para cada ciudad
+area_base_comayagua = volumen_total_rs_comayagua / altura
+longitud_comayagua = area_base_comayagua / ancho
+profundidad_comayagua = longitud_comayagua * talud
+area_cubrimiento_diario_comayagua = ancho * longitud_comayagua
+
+area_base_choluteca = volumen_total_rs_choluteca / altura
+longitud_choluteca = area_base_choluteca / ancho
+profundidad_choluteca = longitud_choluteca * talud
+area_cubrimiento_diario_choluteca = ancho * longitud_choluteca
+
+area_base_danli = volumen_total_rs_danli / altura
+longitud_danli = area_base_danli / ancho
+profundidad_danli = longitud_danli * talud
+area_cubrimiento_diario_danli = ancho * longitud_danli
+
+area_base_la_lima = volumen_total_rs_la_lima / altura
+longitud_la_lima = area_base_la_lima / ancho
+profundidad_la_lima = longitud_la_lima * talud
+area_cubrimiento_diario_la_lima = ancho * longitud_la_lima
+
+area_base_siguatepeque = volumen_total_rs_siguatepeque / altura
+longitud_siguatepeque = area_base_siguatepeque / ancho
+profundidad_siguatepeque = longitud_siguatepeque * talud
+area_cubrimiento_diario_siguatepeque = ancho * longitud_siguatepeque
+
+area_base_juticalpa = volumen_total_rs_juticalpa / altura
+longitud_juticalpa = area_base_juticalpa / ancho
+profundidad_juticalpa = longitud_juticalpa * talud
+area_cubrimiento_diario_juticalpa = ancho * longitud_juticalpa
+
+area_base_catacamas = volumen_total_rs_catacamas / altura
+longitud_catacamas = area_base_catacamas / ancho
+profundidad_catacamas = longitud_catacamas * talud
+area_cubrimiento_diario_catacamas = ancho * longitud_catacamas
+
+# Imprimir las dimensiones de la celda diaria para cada ciudad
+print("Dimensiones de la celda diaria:")
+print("- Comayagua: Altura =", altura, "m, Longitud =", longitud_comayagua, "m, Profundidad =", profundidad_comayagua, "m, Área de cubrimiento diario =", area_cubrimiento_diario_comayagua, "m²")
+print("- Choluteca: Altura =", altura, "m, Longitud =", longitud_choluteca, "m, Profundidad =", profundidad_choluteca, "m, Área de cubrimiento diario =", area_cubrimiento_diario_choluteca, "m²")
+print("- Danlí: Altura =", altura, "m, Longitud =", longitud_danli, "m, Profundidad =", profundidad_danli, "m, Área de cubrimiento diario =", area_cubrimiento_diario_danli, "m²")
+print("- La Lima: Altura =", altura, "m, Longitud =", longitud_la_lima, "m, Profundidad =", profundidad_la_lima, "m, Área de cubrimiento diario =", area_cubrimiento_diario_la_lima, "m²")
+print("- Siguatepeque: Altura =", altura, "m, Longitud =", longitud_siguatepeque, "m, Profundidad =", profundidad_siguatepeque, "m, Área de cubrimiento diario =", area_cubrimiento_diario_siguatepeque, "m²")
+print("- Juticalpa: Altura =", altura, "m, Longitud =", longitud_juticalpa, "m, Profundidad =", profundidad_juticalpa, "m, Área de cubrimiento diario =", area_cubrimiento_diario_juticalpa, "m²")
+print("- Catacamas: Altura =", altura, "m, Longitud =", longitud_catacamas, "m, Profundidad =", profundidad_catacamas, "m, Área de cubrimiento diario =", area_cubrimiento_diario_catacamas, "m²")
